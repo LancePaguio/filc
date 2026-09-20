@@ -1,0 +1,9 @@
+itakda a = 2147483647;
+isulat(a + 1);
+
+// expect: runtime error: Lumagpas sa saklang ng 32bit integer ang pagdaragdag
+
+itakda b = 1414324;
+isulat(b * b);
+
+// expect: runtime error: Lumagpas sa saklaw ng 32bit integer ang pagpaparami

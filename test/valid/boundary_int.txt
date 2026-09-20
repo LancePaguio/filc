@@ -1,0 +1,7 @@
+itakda i = 2147483647;
+isulat(i); //expect: 2147483647
+isulat(i - 1); //expect: 2147483646
+isulat(7/2);  //expect: 3.5
+isulat(-7/2); // expect: -9
+isulat(7%3); //expect: 1
+isulat(-7%3); //expect: 2

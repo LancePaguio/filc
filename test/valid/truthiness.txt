@@ -1,0 +1,37 @@
+isulat(hindi totoo);  //expect: mali
+isulat(hindi mali);  //expect: totoo
+isulat(hindi hindi totoo); //expect: totoo
+
+isulat(hindi 123);  //expect: mali
+isulat(hindi 5);  //expect: mali
+isulat(hindi -1);  //expect: mali
+isulat(hindi 0); //expect: totoo
+
+kung(totoo)  {
+    isulat (1); //expect 1
+}
+kung(mali)  {
+    isulat(99);
+}
+kung (5) {
+    isulat(2); //expect 2
+}
+kung (-3) {
+    isulat(3); //expect 3
+}
+kung(0) {
+    isulat(99);
+}
+
+itakda n = 3;
+habang (n) {
+    isulat(n);
+	n = n - 1;
+}
+// expect: 3
+// expect: 2
+// expect: 1
+
+// break line
+isulat("");
+isulat("");

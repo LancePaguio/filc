@@ -1,0 +1,9 @@
+itakda a = 1;
+pili (a)  {
+    kaso 1: isulat(1);
+    kaso 1: isulat(2);
+}
+
+// expect: Paulit-ulit ang halaga ng kaso: 1
+
+

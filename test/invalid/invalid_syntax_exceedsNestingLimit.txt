@@ -1,0 +1,15 @@
+{
+    {
+	    {
+		    {
+			    {
+				    {
+					  isulat(1);
+				    }
+			    }
+		    }
+	    }
+    }
+}
+
+// expect: syntax error: Sumobra ang lalim ng pugad(limitasyon: 5),

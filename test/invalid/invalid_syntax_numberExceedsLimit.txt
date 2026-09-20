@@ -1,0 +1,6 @@
+itakda a = 2147483648;
+//expect: syntax error: Ang numero '2147483648' ay lumagpas. Ang 32 bit integer ay maaring lamang (-2147483648 hanggang 2147483647).
+
+
+itakda c = -2147483648;
+//expect: syntax error: Ang numero '2147483648' ay lumagpas. Ang 32 bit integer ay maaring lamang (-2147483648 hanggang 2147483647).

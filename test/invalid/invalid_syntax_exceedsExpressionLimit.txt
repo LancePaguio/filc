@@ -1,0 +1,22 @@
+itakda a =
+--------------------------------------------------------------------1;
+
+//expect: syntax error: Sumobra ang lalim ng expression hanggang sa (64 na antas) lamang ang nesting
+
+itakda b =
+    hindi hindi hindi hindi hindi hindi hindi
+	hindi hindi hindi hindi hindi hindi hindi
+	hindi hindi hindi hindi hindi hindi hindi
+	hindi hindi hindi hindi hindi hindi hindi
+	hindi hindi hindi hindi hindi hindi hindi
+	hindi hindi hindi hindi hindi hindi hindi
+	hindi hindi hindi hindi hindi hindi hindi
+	hindi hindi hindi hindi hindi hindi hindi
+	hindi hindi hindi hindi hindi hindi hindi
+	hindi hindi hindi hindi hindi hindi hindi
+	hindi hindi hindi hindi hindi hindi hindi
+	1;
+
+//expect: syntax error: Sumobra ang lalim ng expression hanggang sa (64 na antas) lamang ang nesting
+
+

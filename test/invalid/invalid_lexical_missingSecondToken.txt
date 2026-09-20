@@ -1,0 +1,7 @@
+itakda a = 1;
+isulat(!a);
+
+// expect: lexer error: Hindi inaasahang karakter: '!'.
+Ito ba ay dapat '!='?
+
+

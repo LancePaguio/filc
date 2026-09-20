@@ -1,0 +1,17 @@
+isulat(1); // expect: 1
+// comment // comment// comment
+
+// accepting unicode inside a comment
+
+// Latin 1 Supplement: £§¶ÜÞ
+// Latin Extended-A: ĐĦŋœ
+// Latin Extended-B: ƂƢƩǁ
+// Other stuff: ឃᢆ᯽₪ℜ↩⊗┺░
+// Emoji: ☃☺♣
+
+isulat(2); // expect: 2
+
+isulat(3); // expect: 3
+
+
+

@@ -1,0 +1,52 @@
+kung (totoo) {
+    isulat(1); //expect: 1
+}
+
+kung (mali) {
+    isulat(99); //expect: blank
+}
+
+
+kung (totoo) { isulat(2); } kung_hindi { isulat(99); } // expect: 2
+kung (mali) { isulat(99); } kung_hindi { isulat(3); } //expect: 3
+
+itakda a = 3;
+kung (a > 5)  {
+    isulat(91);
+} kung_hindi kung (a > 0)  {
+    isulat(4); // expect: 4
+} kung_hindi {
+    isulat(92);
+}
+
+a = -1;
+kung (a > 5) {
+    isulat(93);
+} kung_hindi kung (a > 0) {
+    isulat(94);
+} kung_hindi {
+    isulat(5);
+}
+
+// more complex conditions
+itakda b = 7;
+kung (b > 5 at hindi b == 0) {
+    isulat(6);  //expect: 6
+}
+kung (b < 0 o b % 7 == 0)  {
+    isulat(7); // expect 7
+}
+
+// nesting limit
+kung (totoo) {
+    kung (totoo) {
+	    kung (totoo) {
+		    kung (totoo) {
+			    kung (totoo) {
+				isulat(8);    // expect: 8
+
+				}
+			}
+		}
+	}
+}

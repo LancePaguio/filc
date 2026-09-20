@@ -1,0 +1,45 @@
+itakda a = 2;
+pili(a) {
+    kaso 1: isulat(11);
+    kaso 2: isulat(12);  //expect: 12
+    kaso 3: isulat(13);
+}
+
+a = 1;
+pili(a)  {
+    kaso 1: isulat(1);  //expect: 1
+	kaso 2: isulat(14);
+}
+
+pili (a) {
+    kaso 1: isulat(2);   //expect: 2
+	    tigil;
+	kaso 2: isulat(4);
+}
+
+a = 77;
+pili (a) {
+    kaso 1: isulat(42);
+	kaso 2: isulat(16);
+}
+
+a = -1;
+pili(a)  {
+    kaso -1: isulat(4); //expect: 4
+    kaso 1: isulat(52);
+}
+
+pili (2 + 3) {
+    kaso 5: isulat(8);  //expect: 8
+}
+
+para(itakda i = 0; i < 3; i = i + 1) {
+    pili (i){
+	    kaso 0: sunod;
+		kaso 1: isulat(8); //expect: 8
+		kaso 2: tigil;
+	}
+	isulat(i * 100);
+}
+// expect: 100
+// expect: 200

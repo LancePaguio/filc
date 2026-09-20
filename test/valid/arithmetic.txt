@@ -1,0 +1,21 @@
+isulat(123 + 456); // expect: 579
+isulat(4 - 3); // expect: 1
+isulat(5 * 3); // expect: 15
+isulat(8 / 2); // expect: 4
+
+// division
+isulat(7 / 2); // expect: 3
+isulat(-7 / 2); // expect: -3
+isulat(1 / 2); // expect: 0
+
+// modulo
+isulat(7 % 3); // expect: 1
+isulat(-7 % 3); // expect: -1
+isulat(7 % -3); // expect: 1
+
+// negation
+isulat(-(3)); // expect: -3
+isulat(-0); // expect: 0
+
+
+

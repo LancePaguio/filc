@@ -1,0 +1,24 @@
+isulat(1 == 1); // expect: totoo
+isulat(1 == 2); // expect: mali
+isulat(1 != 1); // expect: mali
+isulat(1 != 2); // expect: totoo
+
+isulat(totoo == totoo); // expect: totoo
+isulat(totoo == mali); // expect: mali
+isulat(mali == totoo); // expect: mali
+isulat(mali == mali); // expect: totoo
+
+isulat(totoo != totoo); // expect: mali
+isulat(totoo != mali); // expect: totoo
+
+isulat(totoo == 1); // expect: mali
+isulat(mali == 0); // expect: mali
+isulat(1 == totoo); // expect: mali
+isulat(0 == mali); // expect: mali
+
+isulat(totoo != 1); // expect: totoo
+isulat(mali != 0); // expect: totoo
+
+isulat(hindi 0 == 1); // expect: totoo
+
+

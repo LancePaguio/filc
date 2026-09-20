@@ -1,0 +1,8 @@
+itakda a = 4;
+itakda b = 0;
+
+isulat(a / b);
+
+//expect: runtime error: Hindi ito pwede hatiin sa zero.
+
+

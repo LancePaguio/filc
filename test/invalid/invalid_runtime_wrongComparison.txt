@@ -1,0 +1,5 @@
+isulat(totoo > 1);
+
+// expect: runtime error: Ang pwede ilagay sa operand ay mga numero lamang
+
+

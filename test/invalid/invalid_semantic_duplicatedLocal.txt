@@ -1,0 +1,6 @@
+itakda a = 1;
+itakda a = 1;
+
+// expect: semantic error: naideklara na ang variable 'a' sa linya 1.
+
+

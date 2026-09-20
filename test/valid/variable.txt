@@ -1,0 +1,28 @@
+itakda a = 1;
+isulat(a); //expect 1
+
+a = 2;
+isulat(a); //expect 2
+
+kung (totoo) {
+    itakda b = 5;
+
+}
+isulat (b); //expect: 5
+
+{
+    {
+	    isulat(a); //expect: 2
+		a = 9;
+	}
+}
+
+itakda c = 1;
+isulat(c) ;  //expect 1
+c = totoo;
+isulat(c);    //expect: totoo
+
+itakda d = a * 2 + 1;
+isulat(d);  //expect 19
+
+

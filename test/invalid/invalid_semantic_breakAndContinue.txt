@@ -1,0 +1,8 @@
+tigil;
+sunod;
+
+//expect: semantic error: Ang 'tigil' ay dapat lamang sa loob ng loop o 'pili'.
+
+//expect: semantic error: Ang 'sunod' ay dapat lamang sa loob ng loop.
+
+

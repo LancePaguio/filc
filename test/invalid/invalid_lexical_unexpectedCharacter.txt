@@ -1,0 +1,8 @@
+itakda a = 1;
+itakda b = 2;
+
+isulat(a | b)
+
+//expect: lexer error: Hindi inaasahang karakter: '|'
+
+

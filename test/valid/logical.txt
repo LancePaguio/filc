@@ -1,0 +1,26 @@
+// should be able to return an operand
+isulat(mali at 1); // expect: mali
+isulat(0 at 1); // expect: 0
+isulat(1 at 2 at mali); // expect: mali
+
+//if everything is true, then the last item is returned
+isulat(1 at totoo); // expect: totoo
+isulat(1 at 2 at 3); // expect: 3
+
+// if everything is false, then the last item is returned
+isulat(mali o mali); // expect: mali
+isulat(0 o mali); // expect: mali
+
+// 'o' statement returns the first one true
+isulat(1 o totoo); // expect: 1
+isulat(mali o 1); // expect: 1
+isulat(mali o mali o totoo); // expect: totoo
+
+itakda b = 0;
+
+kung (b != 0 at 10 / b > 1) {
+	isulat(999);
+
+}
+isulat(1);        //expect: 1
+

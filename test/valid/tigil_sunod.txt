@@ -1,0 +1,13 @@
+itakda kalahatan = 0;
+para (itakda i = 1; i <= 10; i = i + 1){
+    kung (i % 2 == 0) {
+        sunod;
+    }
+
+    kung (i > 7)  {
+        tigil;
+    }
+    kalahatan = kalahatan + i;
+}
+
+isulat(kalahatan); //expect: 16

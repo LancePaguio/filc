@@ -1,0 +1,41 @@
+itakda a = 100;
+gawin {
+    isulat(a);  // expect: 100
+	a = a + 1;
+} habang (a<0);
+
+// loop until i counter exceeds 3
+itakda i = 0;
+gawin {
+    isulat(i);
+	i = i + 1;
+} habang (i < 3);
+// expect: 0
+// expect: 1
+// expect: 2
+
+// continue statement
+itakda n = 0;
+gawin {
+    n = n + 1;
+	kung (n == 2) {
+	    sunod;
+	}
+	isulat(n);
+} habang (n < 4);
+// expect: 1
+// expect: 3
+// expect: 4
+
+// break statement
+itakda m = 0;
+gawin {
+    m = m + 1;
+	kung (m == 2) {
+	    tigil;
+	}
+	isulat(m);
+
+} habang (m < 10);
+// expect: 1
+

@@ -1,0 +1,8 @@
+kung (totoo) isulat(2);
+// expect: syntax error: kinakailangan ang '{' upang simulan ang block.
+
+habang(totoo) isulat(5);
+// expect: syntax error: kinakailangan ang '{' upang simulan ang block.
+
+para (itakda i = 0; i < 1; i = i + 1) isulat(3);
+// expect: syntax error: kinakailangan ang '{' upang simulan ang block.

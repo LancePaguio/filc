@@ -1,0 +1,17 @@
+isulat("Kamusta"); //expect: Kamusta
+isulat(""); //expect:
+isulat("(" );  //expect: (
+
+//unicode
+isulat("ឃᢆ᯽₪ℜ↩⊗┺░"); //expect: ឃᢆ᯽₪ℜ↩⊗┺░
+
+//no escape sequence for '\n'
+isulat("a\n"); //expect: a\n
+
+isulat("hindi // komento");   // expect: hindi // komento
+
+// break line
+isulat("");
+isulat("");
+
+

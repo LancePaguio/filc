@@ -1,0 +1,31 @@
+isulat(2 + 3 * 4);  //expect: 14
+
+isulat(20 - 3 * 4); // expect: 8
+
+isulat(2 + 6 / 3);  // expect 4
+
+isulat(2 - 6 / 3);  // expect: 0
+
+isulat(1 + 7 % 3);  //expect: 2
+
+isulat(2 < 1 == mali);  //expect: totoo
+isulat(1 > 2 == mali);  //expect: totoo
+isulat(2 <= 1 == mali);  //expect: totoo
+isulat(1 >= 2 == mali);  //expect: totoo
+
+isulat(20 - 6 - 2); //expect: 12
+isulat(100 / 5 / 2);  //expect: 10
+
+isulat(1 - 1);  //expect: 0
+isulat(1 -1);  //expect: 0
+isulat(1- 1);  //expect: 0
+
+isulat((2 * (6 - (2 + 2))));  //expect: 4
+isulat((2 + 3) * 4);  //expect:20
+
+isulat(- - 5);   //expect: 5
+isulat(- - - 5);   //expect: -5
+
+isulat(hindi 0 == 0); //expect: mali
+
+

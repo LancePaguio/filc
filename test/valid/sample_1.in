@@ -1,0 +1,15 @@
+itakda numero = 0;
+itakda tapos_na = mali;
+basahin(numero);
+
+habang (numero > 0 at hindi tapos_na) {
+    isulat(numero);
+
+kung (numero == 5) {
+tapos_na = totoo;
+}
+
+numero = numero - 1;
+}
+
+

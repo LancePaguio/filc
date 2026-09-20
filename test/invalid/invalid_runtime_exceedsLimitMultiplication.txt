@@ -1,0 +1,7 @@
+itakda a = 1414324;
+isulat(a * a);
+
+// expect: runtime error: Lumagpas sa saklaw ng 32bit integer ang pagpaparami
+
+
+

@@ -1,0 +1,42 @@
+itakda a = 0;
+habang (a < 3) {
+    isulat(a);
+    a = a + 1;
+}
+// expect: 0
+// expect: 1
+// expect: 2
+
+habang (mali)  {
+    isulat(99);
+}
+
+itakda i = 0;
+habang (i < 2)  {
+    itakda j = 0;
+    habang (j < 2) {
+        isulat(i * 10 + j);
+        j = j + 1;
+    }
+    i = i + 1;
+}
+// expect: 0
+// expect: 1
+// expect: 10
+// expect: 11
+
+// break and continue statements
+itakda k = 0;
+habang (k < 10) {
+    k = k + 1;
+    kung (k % 2 == 0)  {
+        sunod;
+    }
+    kung (k > 5)  {
+        tigil;
+    }
+    isulat(k);
+}
+// expect: 1
+// expect: 3
+// expect: 5

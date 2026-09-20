@@ -1,0 +1,20 @@
+itakda a = 1
+// expect: syntax error: kinakailangan ang ';' bago ng deklarasyon.
+
+itakda = 4
+// expect:syntax error: kinakailangan ang pangalan ng variable.
+
+itakda b 8
+// expect: syntax error: kinakailangan ang '=' sa deklarasyon ng variable.
+
+isulat(b;
+// expect:syntax error: kinakailangan ang ')'.
+
+isulat a);
+// expect:syntax error: kinakailangan ang '(' bago ng 'isulat' o 'ipakita'.
+
+kung a > 1 {
+    isulat(a);
+}
+// expect: syntax error: kinakailangan ang '(' bago ng 'kung'.
+// expect: syntax error: kinakailangan ng pahayag(statement).

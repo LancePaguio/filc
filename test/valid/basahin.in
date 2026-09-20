@@ -1,0 +1,27 @@
+// type 10 here
+itakda a = basahin();
+isulat(a); // expect: 10
+
+// type 20
+itakda b = kunin();
+isulat(b); // expect: 20
+
+// type 30
+itakda c = basahin() * 2;
+isulat(c); // expect: 60
+
+// type 40
+basahin(a);
+isulat(a); // expect: 40
+
+// type 50 60
+itakda d = basahin();
+itakda e = basahin();
+isulat(d + e); // expect: 110
+
+// type -7
+itakda f = basahin();
+isulat(f); // expect: -7
+
+
+

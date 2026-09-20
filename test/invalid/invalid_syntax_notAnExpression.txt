@@ -1,0 +1,12 @@
+1 + 2;
+// expect: syntax error: kinakailangan ng pahayag(statement).
+
+isulat();
+// expect: syntax error: Hindi inaasahang simbolo sa expression: ')'.
+
+isulat(1 +);
+// expect:: syntax error: Hindi inaasahang simbolo sa expression: ')'.
+
+isulat(* 2);
+// expect: syntax error: Hindi inaasahang simbolo sa expression: '*'.
+

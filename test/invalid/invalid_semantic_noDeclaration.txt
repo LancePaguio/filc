@@ -1,0 +1,3 @@
+isulat(zzz);
+
+// expect: semantic error: Ginamit and variable 'zzz' bago ito maideklara.

@@ -1,0 +1,42 @@
+para (itakda a = 0; a < 3; a = a + 1) {
+    isulat(a);
+}
+//expect: 0
+//expect: 1
+//expect: 2
+
+isulat(a);  //expect: 3
+
+para (itakda b = 3; b > 0; b = b - 1) {
+    isulat(b);
+}
+//expect: 3
+//expect: 2
+//expect: 1
+
+para (itakda c = 0; c < 5; c = c + 1) {
+    kung (c % 2 == 0)  {
+	    sunod;
+	}
+	isulat(c);
+}
+// expect: 1
+// expect: 3
+
+para (itakda d = 0; d < 100; d = d + 1)  {
+    kung (d == 2)  {
+	    tigil;
+	}
+}
+// expect: 0
+// expect: 1
+
+para (itakda i = 1; i <= 2; i = i + 1) {
+    para (itakda j = 1; j <= 2; j = j + 1)  {
+	    isulat(i * 10 + j);
+	}
+}
+//expect: 11
+//expect: 12
+//expect: 21
+//expect: 22

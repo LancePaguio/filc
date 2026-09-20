@@ -1,0 +1,5 @@
+isulat("no unqoutes
+
+// expect: lexer error: Hindi natatapos na string literal.
+
+

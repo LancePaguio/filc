@@ -1,0 +1,25 @@
+{} // block only
+
+kung (totoo) {}
+kung (mali) {} kung_hindi {}
+
+isulat(1); // expect: 1
+
+itakda a = 10;
+
+// the variable with value inside the block
+// keeps that value outside
+// In addition we also want to test when
+// blocks are next to each other
+// to see if something unexpected happens
+{a =  20;}
+isulat(a); // expect: 20
+{a =  30;}
+isulat(a); // expect: 30
+
+// 5 block nestin
+{ { { { {
+    isulat(2); //expect: 2
+} } } } }
+
+

@@ -1,0 +1,4 @@
+itakda a = -2147483647 - 1;
+isulat(a - 1);
+
+// expect: runtime error: Lumagpas sa saklaw ng 32bit integer ang pagbabawas

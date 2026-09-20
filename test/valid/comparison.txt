@@ -1,0 +1,21 @@
+isulat(1 < 2); // expect: totoo
+isulat(2 < 2); // expect: mali
+isulat(2 < 1); // expect: mali
+
+isulat(1 <= 2); // expect: totoo
+isulat(2 <= 2); // expect: totoo
+isulat(2 <= 1); // expect: mali
+
+isulat(1 > 2); // expect: mali
+isulat(2 > 2); // expect: mali
+isulat(2 > 1); // expect: totoo
+
+isulat(1 >= 2); // expect: mali
+isulat(2 >= 2); // expect: totoo
+isulat(2 >= 1); // expect: mali
+
+isulat(0 < -0); // expect: mali
+isulat(0 > -0); // expect: mali
+isulat(0 <= -0); // expect: totoo
+isulat(0 >= -0); // expect: totoo
+
