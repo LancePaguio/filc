@@ -1,25 +1,28 @@
-CXXFLAGS=-std=c++17 -g -Wall -Wextra -Isrc
-PREFIX=/usr/local
+CXXFLAGS=-std=c++17 -g -O2 -Wall -Wextra -Isrc
+PREFIX=$(HOME)/.local
 
 SRCS=$(wildcard src/*.cpp)
-OBJS=$(SRCS:.cpp=.o)
-LIB_OBJS=$(filter-out src/main.o,$(OBJS))
 
 # filc
-filc: $(OBJS)
-	$(CXX) $(CXXFLAGS) -o $@ $^
-
-src/%.o: src/%.cpp
-	$(CXX) $(CXXFLAGS) -MMD -MP -c -o $@ $<
-
--include $(OBJS:.o=.d)
+filc: $(SRCS)
+	$(CXX) $(CXXFLAGS) $^ -o $@
 
 # Installation
 install: filc
-	install -d $(DESTDIR)$(PREFIX)/bin
 	install -m 755 filc $(DESTDIR)$(PREFIX)/bin/filc
 
-clean:
-	rm -f filc src/*.o src/*.d
+debug: CXXFLAGS = -std=c++17 -g -O0 -fno-omit-frame-pointer -fsanitize=address,undefined -Isrc
+debug: $(SRCS)
+	$(CXX) $(CXXFLAGS) $^ -o filc-debug
 
-.PHONY: install clean
+valgrind: CXXFLAGS = -std=c++17 -g -O1 -Isrc
+valgrind: $(SRCS)
+	$(CXX) $(CXXFLAGS) $^ -o filc-valgrind
+
+uninstall:
+	rm -f $(DESTDIR)$(PREFIX)/bin/filc
+
+clean:
+	rm -f filc filc-debug src/*.o src/*.d
+
+.PHONY: install debug valgrind uninstall clean
