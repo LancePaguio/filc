@@ -1,0 +1,8 @@
+itakda x = 200000;
+itakda kalahatan = 0;
+
+para (itakda i = 1; i <= x; i = i + 1 ) {
+    kalahatan = kalahatan + i * 2 - i / 3 + i % 7;
+}
+
+isulat(kalahatan)
